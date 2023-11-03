@@ -7,7 +7,7 @@ app.get("/api", (req: Request, res: Response) => {
 });
 
 app.get("/", (req: Request, res: Response) => {
-  res.end("Hello from backend");
+  res.end("TS NODE with CI CD");
 });
 
 export default app;
