@@ -1,19 +1,20 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "/dist/server.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "/dist/server.js",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/dist/server.js"
-    }
-  ]
-}
+    "version": 2,
+    "builds": [
+      {
+        "src": "/dist/server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/../build/$1"
+      }
+    ]
+  }
+  
