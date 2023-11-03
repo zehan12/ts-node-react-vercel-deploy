@@ -5,7 +5,7 @@
   "ext": "ts, js",
   "events": {
     "restart": "kill-port 4000",
-    "crash": "kill-port 4000"
+    "crash": ["kill-port 4000", "npx kill-port 4000"]
   },
   "delay": "500"
 }
