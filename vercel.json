@@ -4,9 +4,13 @@
       {
         "src": "/dist/server.js",
         "use": "@vercel/node"
+      },
+      {
+        "src": "/build/index.html",
+        "use": "@vercel/static"
       }
     ],
-    "routes": [
+    "rewrites": [
       {
         "src": "/api",
         "dest": "/dist/server.js"
