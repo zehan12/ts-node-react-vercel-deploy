@@ -9,7 +9,7 @@
     "start": "npx tsc && babel dist -d dist && npx kill-port 4000 && node dist/server.js",
     "dev": "nodemon src/server.ts",
     "server:dev": "ts-node-dev --inspect=0.0.0.0:9229 --exit-child --respawn -r tsconfig-paths/register src/server.ts",
-    "dev:prod": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "dev:prod": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\"",
     "build-client": "mkdir -p build && cd client && npm run build && cp -r ./dist/* ../build/",
     "log-level:change": "runtime-node-refresh"
   },
