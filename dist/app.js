@@ -7,7 +7,7 @@ app.get("/api", (req, res) => {
     res.status(200).json({ info: "api is working threw serverless function" });
 });
 app.get("/", (req, res) => {
-    res.end("Hello from backend");
+    res.end("TS NODE with CI CD");
 });
 exports.default = app;
 //# sourceMappingURL=app.js.map
