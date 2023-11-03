@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "/dist/server.ts",
+        "src": "/dist/server.js",
         "use": "@vercel/node"
       }
     ],
@@ -15,6 +15,7 @@
         "src": "/(.*)",
         "dest": "/build/index.html"
       }
-    ]
+    ],
+    "cleanUrls": true
   }
   
