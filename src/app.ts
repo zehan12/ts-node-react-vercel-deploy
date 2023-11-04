@@ -18,7 +18,7 @@ app.get("/api", (req: Request, res: Response) => {
 });
 
 app.get("/", (req: Request, res: Response) => {
-  res.end("hello backend is back");
+  res.status(200).json({ success: "backend is working" });
 });
 
 export default app;
